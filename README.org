@@ -9,7 +9,7 @@ Start the test environment:
 docker-compose up -d --build --remove-orphans
 #+end_src
 
-Check: ~docker ps~
+To check: ~docker ps~
 
 To enter the shell of the running container in the interactive mode, run:
 
