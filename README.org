@@ -1,0 +1,18 @@
+* Slurm on Debian Docker Image
+
+This is an all-in-one [[https://slurm.schedmd.com][Slurm]] installation.
+
+This container provides everything you need to test using a ~Python 3.7~ interpreter.
+Start the test environment:
+
+#+begin_src bash
+docker-compose up -d --build --remove-orphans
+#+end_src
+
+Check: ~docker ps~
+
+To enter the shell of the running container in the interactive mode, run:
+
+#+begin_src bash
+docker exec --hostname slurmctl -it slurm_debian_slurm_1 /bin/bash
+#+end_src
